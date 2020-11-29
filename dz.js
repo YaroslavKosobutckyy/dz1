@@ -49,3 +49,10 @@ let price = prompt('Input price of the oil');
 let liter = parseInt(money / price);
 let moneyCh = money - (liter * price);
 console.log("You can bay " + liter + " liters and your have " + moneyCh + " money");
+
+// варіант 2 але деколи видає неправельний результат
+let money = prompt('How many money is in your bankcard?');
+let price = prompt('Input price of the oil');
+let liter = money % price;
+let moneyCh = money - (liter * price);
+console.log("You can bay " + liter + " liters and your have " + moneyCh + " money");
